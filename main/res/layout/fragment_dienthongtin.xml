@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dienthongtinFragment"
+    android:orientation="vertical"
+ >
+
+    <TextView
+        android:text="Họ Tên Khách Hàng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/edtten"
+        android:hint="Họ tên khách hàng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh" />
+
+            <EditText
+                android:id="@+id/edtngaysinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Ngày sinh" />
+
+
+        </LinearLayout>
+        <ImageView
+        android:id="@+id/imglich"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+            android:layout_weight="0"
+        android:src="@drawable/ic_action_lich" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại" />
+
+    <EditText
+        android:id="@+id/edtsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:inputType="textPersonName"
+        android:hint="Số điện thoại" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đia chỉ" />
+
+    <EditText
+        android:id="@+id/edtdiachi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPersonName"
+        android:hint=" Nhập địa chỉ" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn phương thức thanh toán" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/phuongthuc"
+        >
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/bttienmat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền mặt"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btnganhang"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngân hàng" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/btvdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ví điện tử" />
+    </RadioGroup>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn dịch vụ" />
+    <Spinner
+        android:id="@+id/spiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btxacnhan"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận" />
+</LinearLayout>
